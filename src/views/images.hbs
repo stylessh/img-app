@@ -1,0 +1,32 @@
+<style media="screen">
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+}
+
+</style>
+
+
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+
+      {{#each photos}}
+          <img src="{{imageURL}}" class="swiper-slide" alt="">
+      {{/each}}
+
+    </div>
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+</div>
